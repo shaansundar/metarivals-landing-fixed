@@ -6,12 +6,28 @@ import { AppComponent } from './app.component';
 import { HeroComponent } from './pages/hero/hero.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AboutComponent } from './pages/about/about.component';
+import { WhymetarivalsComponent } from './pages/whymetarivals/whymetarivals.component';
+import { NftmarketplaceComponent } from './pages/nftmarketplace/nftmarketplace.component';
+import { MrvlFeaturesComponent } from './pages/mrvl-features/mrvl-features.component';
+import { GameplanComponent } from './pages/gameplan/gameplan.component';
+import { RoadmapComponent } from './pages/roadmap/roadmap.component';
+import { TeamComponent } from './pages/team/team.component';
+import { PartnersComponent } from './pages/partners/partners.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroComponent,
-    HeaderComponent
+    HeaderComponent,
+    AboutComponent,
+    WhymetarivalsComponent,
+    NftmarketplaceComponent,
+    MrvlFeaturesComponent,
+    GameplanComponent,
+    RoadmapComponent,
+    TeamComponent,
+    PartnersComponent
   ],
   imports: [
     BrowserModule,

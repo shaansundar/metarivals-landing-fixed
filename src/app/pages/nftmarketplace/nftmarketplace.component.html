@@ -1,0 +1,20 @@
+<div class="w-screen h-full my-10 flex flex-col items-center justify-center">
+    <div
+        class="flex items-center justify-start w-5/6 h-5/6 bg-gradient-to-tr from-slate-700/[0.3] to-slate-500/[0.3] rounded-3xl">
+        <img src="../../../assets/nftmarketplace-hero.svg" class="w-1/3 h-2/3 mx-10" alt="">
+        <div class="flex flex-col items-start py-10 justify-start text-white">
+            <h1 class="text-6xl text-left">MetaRivals <br> NFT Marketplace</h1>
+            <p class="w-96">Every Character & Weapon NFT represenst the real Character & weapon that will be used in the
+                MetaRivals Game</p>
+            <div class="flex w-full my-4">
+                <div *ngFor="let item of list" >
+                    <img src="../../../assets/nftmarketplace/{{item}}.svg" alt="" srcset="">
+                </div>
+            </div>
+            <button class=" w-1/2 hover:scale-105 transition-all">
+                <img src="../../../assets/why-button.svg" class=" w-full -z-10" alt="" srcset="">
+                <h1 class="relative -translate-y-12 mr-5">Sale coming Soon</h1>
+            </button>
+        </div>
+    </div>
+</div>
