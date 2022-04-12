@@ -7,3 +7,12 @@ html{
     overflow-x: hidden;
     background-color: black;
 }
+
+@font-face {
+    font-family: "ThunderboldDemo";
+    src: local("ThunderboldDemo"), url(./assets/fonts/thunderbold/ThunderboldDemo.otf) format("otf");
+}
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins"), url(./assets/fonts/Poppins/Poppins-Regular.ttf) format("ttf");
+}
