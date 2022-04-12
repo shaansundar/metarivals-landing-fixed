@@ -12,12 +12,12 @@ export class TeamComponent implements OnInit {
   constructor() { }
   x = [faTwitter,faLinkedin];
   public teamlist = [
-    {'Name':'Vivek Raman', 'Designation':'Managing Director', 'Experience':'Regrob'},
-    {'Name':'Ashish', 'Designation':'Chief Advisory Officer', 'Experience':'Regrob'},
-    {'Name':'Pawan', 'Designation':'Global Community Head', 'Experience':'Ureqa'},
-    {'Name':'Prince P Singh', 'Designation':'Head of Marketing', 'Experience':'Coti'},
-    {'Name':'Dev', 'Designation':'Chief Marketing Officer', 'Experience':'Okex'},
-    {'Name':'Louisa Lopez', 'Designation':'Head of Business Dev', 'Experience':'Safe Launch'},
+    {'Name':'Vivek Raman', 'Designation':'Managing Director'},
+    {'Name':'Ashish', 'Designation':'Chief Advisory Officer - CAO'},
+    {'Name':'Pawan', 'Designation':'Global Community Head'},
+    {'Name':'Prince Pratap Singh', 'Designation':'Chief Operating Officer - COO'},
+    {'Name':'Dev', 'Designation':'Chief Marketing Officer - CMO'},
+    {'Name':'Louisa Lopez', 'Designation':'Head of Business Dev'},
   ];
 
   ngOnInit(): void {
