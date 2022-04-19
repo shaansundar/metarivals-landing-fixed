@@ -1,4 +1,4 @@
-<img src="../../../assets/v2/divider.svg" class="w-full my-5" alt="">
+<img loading="eager" src="../../../assets/v2/divider.svg" class="w-full my-5" alt="">
 <div class="h-full w-full text-white flex flex-col items-center justify-start">
     <h1
         class="text-6xl mt-20 text-transparent bg-clip-text bg-gradient-to-t from-Dark to-Light font-['ThunderboldDemo'] px-4 uppercase">
@@ -8,7 +8,7 @@
         <div *ngFor="let item of teamlist | slice:0:total" (mouseenter)="item.isTrue = false"
             (mouseleave)="item.isTrue = true"
             class="w-80 hover h-[416px] m-10 flex flex-col items-center justify-center">
-            <img src="../../../assets/team-outline.svg" class="w-80 absolute -z-10" alt="">
+            <img loading="eager" src="../../../assets/team-outline.svg" class="w-80 absolute -z-10" alt="">
             <img [ngClass]="!item.isTrue ? 'hidden': 'block'" src="../../../assets/{{item.Name}}.png"
                 class="w-30 transition-all border border-white p-2" alt="">
             <h1 [ngClass]="!item.isTrue ? 'hidden': 'block'"
@@ -24,12 +24,12 @@
                 <fa-icon class="m-1 cursor-pointer hover:scale-110 transition-all text-xl" [icon]="x[1]"></fa-icon>
             </div>
             <!-- <h1 class="text-[#6DFFFF] italic my-2 text-sm">Experience</h1> -->
-            <!-- <img src="../../../assets/{{item.Experience}}.svg" alt=""> -->
+            <!-- <img loading="eager" src="../../../assets/{{item.Experience}}.svg" alt=""> -->
         </div>
         <div class="w-full flex items-center justify-center">
             <button (click)=" !isMore ? total = teamlist.length : total = 5 ; isMore = !isMore"
                 class="ml-4 w-1/2 max-w-[300px] hover:scale-105 transition-all">
-                <img src="../../../assets/why-button.svg" class=" w-full -z-10" alt="" srcset="">
+                <img loading="eager" src="../../../assets/why-button.svg" class=" w-full -z-10" alt="" srcset="">
                 <h1 class="relative -translate-y-12 md:-translate-y-12 mr-5">{{!isMore ? "Show More" : "Show Less"}}
                 </h1>
             </button>
