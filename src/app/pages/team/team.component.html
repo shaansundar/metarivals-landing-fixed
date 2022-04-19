@@ -1,19 +1,34 @@
 <img src="../../../assets/v2/divider.svg" class="w-full my-5" alt="">
 <div class="h-full w-full text-white flex flex-col items-center justify-start">
-    <h1 class="text-6xl mt-20 text-6xl text-transparent bg-clip-text bg-gradient-to-t from-Dark to-Light font-['ThunderboldDemo'] px-4 uppercase">TEAM</h1>
+    <h1
+        class="text-6xl mt-20 text-transparent bg-clip-text bg-gradient-to-t from-Dark to-Light font-['ThunderboldDemo'] px-4 uppercase">
+        TEAM</h1>
     <h1>Mind Behind MetaRivals</h1>
     <div class="flex flex-row w-full flex-wrap items-center justify-center">
-        <div *ngFor="let item of teamlist" class="w-80 h-[416px] m-10 flex flex-col items-center justify-center">
+        <div *ngFor="let item of teamlist | slice:0:total" (mouseenter)="item.isTrue = false"
+            (mouseleave)="item.isTrue = true"
+            class="w-80 hover h-[416px] m-10 flex flex-col items-center justify-center">
             <img src="../../../assets/team-outline.svg" class="w-80 absolute -z-10" alt="">
-            <img src="../../../assets/{{item.Name}}.png" class="w-30 border border-white p-2" alt="">
-            <h1 class="w-full text-center mt-6 uppercase text-2xl">{{item.Name}}</h1>
-            <h1 class="w-full text-center text-gray-400">{{item.Designation}}</h1>
-            <div class="flex items-center justify-center">
+            <img [ngClass]="!item.isTrue ? 'hidden': 'block'" src="../../../assets/{{item.Name}}.png"
+                class="w-30 transition-all border border-white p-2" alt="">
+            <h1 [ngClass]="!item.isTrue ? 'hidden': 'block'"
+                class="w-full transition-[display] text-center mt-6 uppercase text-2xl">{{item.Name}}</h1>
+            <h1 [ngClass]="item.isTrue ? 'hidden': 'block'"
+                class="w-3/4 skewed transition-[display] text-center px-4 mt-6 uppercase text-base">{{item.Description}}
+            </h1>
+            <h1 [ngClass]="!item.isTrue ? 'hidden': 'block'" class="w-full transition-all text-center text-gray-400">
+                {{item.Designation}}</h1>
+            <div [ngClass]="item.isTrue ? 'hidden': 'block'"
+                class="flex skewed transition-all items-center mt-4 justify-center">
                 <fa-icon class="m-1 cursor-pointer hover:scale-110 transition-all text-xl" [icon]="x[0]"></fa-icon>
                 <fa-icon class="m-1 cursor-pointer hover:scale-110 transition-all text-xl" [icon]="x[1]"></fa-icon>
             </div>
             <!-- <h1 class="text-[#6DFFFF] italic my-2 text-sm">Experience</h1> -->
             <!-- <img src="../../../assets/{{item.Experience}}.svg" alt=""> -->
         </div>
+        <button (click)=" !isMore ? total = teamlist.length : total = 6 ; isMore = !isMore" class="ml-4 w-1/2 max-w-[300px] hover:scale-105 transition-all">
+            <img src="../../../assets/why-button.svg" class=" w-full -z-10" alt="" srcset="">
+            <h1 class="relative -translate-y-12 md:-translate-y-12 mr-5">{{!isMore ? "Show More" : "Show Less"}}</h1>
+        </button>
     </div>
 </div>

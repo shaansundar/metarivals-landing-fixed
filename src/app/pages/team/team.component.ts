@@ -1,23 +1,50 @@
+import { getLocaleEraNames } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-team',
   templateUrl: './team.component.html',
-  styles: [
+  styles: [`
+  .hover{
+    transition: transform 0.5s ease-in-out;
+  }
+  .hover:hover{
+    transform: rotateY(180deg);
+  }
+
+  .skewed{
+    transform: rotateY(180deg);
+  }
+
+  .visibility{
+    display: block;
+    transition: display 0.5s ease-in-out;
+  }
+  .invisibility{
+    display: hidden;
+    transition: display 0.5s ease-in-out;
+  }
+
+  `
   ]
 })
 export class TeamComponent implements OnInit {
 
   constructor() { }
   x = [faTwitter,faLinkedin];
+  total = 6;
+  isMore = false;
   public teamlist = [
-    {'Name':'Vivek Raman', 'Designation':'Managing Director'},
-    {'Name':'Ashish', 'Designation':'Chief Advisory Officer - CAO'},
-    {'Name':'Pawan', 'Designation':'Global Community Head'},
-    {'Name':'Prince Pratap Singh', 'Designation':'Chief Operating Officer - COO'},
-    {'Name':'Dev', 'Designation':'Chief Marketing Officer - CMO'},
-    {'Name':'Louisa Lopez', 'Designation':'Head of Business Dev'},
+    {'isTrue':true,'Name':'Vivek Raman', 'Designation':'Managing Director', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
+    {'isTrue':true,'Name':'Ashish', 'Designation':'Chief Advisory Officer - CAO', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
+    {'isTrue':true,'Name':'Pawan', 'Designation':'Global Community Head', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
+    {'isTrue':true,'Name':'Prince Pratap Singh', 'Designation':'Chief Operating Officer - COO', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
+    {'isTrue':true,'Name':'Dev', 'Designation':'Chief Marketing Officer - CMO', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
+    {'isTrue':true,'Name':'Louisa Lopez', 'Designation':'Head of Business Dev', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
+    {'isTrue':true,'Name':'Shaan Sundar', 'Designation':'Tech Lead', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
+    {'isTrue':true,'Name':'Shaan Sundar', 'Designation':'Tech Lead', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
+    {'isTrue':true,'Name':'Shaan Sundar', 'Designation':'Tech Lead', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
   ];
 
   ngOnInit(): void {

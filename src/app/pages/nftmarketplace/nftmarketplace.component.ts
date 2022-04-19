@@ -11,7 +11,7 @@ export class NftmarketplaceComponent implements OnInit {
   constructor() { }
   public list: number[] = [];
   ngOnInit(): void {
-    for(let i=0; i<9; i++){
+    for(let i=1; i<9; i++){
       this.list.push(i);
     }
   }
