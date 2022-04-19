@@ -14,6 +14,7 @@ import { GameplanComponent } from './pages/gameplan/gameplan.component';
 import { RoadmapComponent } from './pages/roadmap/roadmap.component';
 import { TeamComponent } from './pages/team/team.component';
 import { PartnersComponent } from './pages/partners/partners.component';
+import { WindowService } from './services/window.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { PartnersComponent } from './pages/partners/partners.component';
     AppRoutingModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [WindowService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

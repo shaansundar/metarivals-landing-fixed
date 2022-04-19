@@ -41,7 +41,7 @@ export class TeamComponent implements OnInit {
     {'isTrue':true,'Name':'Dev', 'Designation':'Co-Founder, CMO', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
     {'isTrue':true,'Name':'Pawan', 'Designation':'Co-Founder, Global Community Head', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
     {'isTrue':true,'Name':'Louisa Lopez', 'Designation':'Business Development Head', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
-    {'isTrue':true,'Name':'Vivek Raman', 'Designation':'Managing Director', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
+    // {'isTrue':true,'Name':'Vivek Raman', 'Designation':'Managing Director', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
   ];
 
   ngOnInit(): void {
