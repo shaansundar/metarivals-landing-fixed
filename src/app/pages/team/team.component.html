@@ -26,9 +26,13 @@
             <!-- <h1 class="text-[#6DFFFF] italic my-2 text-sm">Experience</h1> -->
             <!-- <img src="../../../assets/{{item.Experience}}.svg" alt=""> -->
         </div>
-        <button (click)=" !isMore ? total = teamlist.length : total = 6 ; isMore = !isMore" class="ml-4 w-1/2 max-w-[300px] hover:scale-105 transition-all">
-            <img src="../../../assets/why-button.svg" class=" w-full -z-10" alt="" srcset="">
-            <h1 class="relative -translate-y-12 md:-translate-y-12 mr-5">{{!isMore ? "Show More" : "Show Less"}}</h1>
-        </button>
+        <div class="w-full flex items-center justify-center">
+            <button (click)=" !isMore ? total = teamlist.length : total = 5 ; isMore = !isMore"
+                class="ml-4 w-1/2 max-w-[300px] hover:scale-105 transition-all">
+                <img src="../../../assets/why-button.svg" class=" w-full -z-10" alt="" srcset="">
+                <h1 class="relative -translate-y-12 md:-translate-y-12 mr-5">{{!isMore ? "Show More" : "Show Less"}}
+                </h1>
+            </button>
+        </div>
     </div>
 </div>

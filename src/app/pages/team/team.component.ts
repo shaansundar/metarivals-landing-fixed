@@ -33,18 +33,15 @@ export class TeamComponent implements OnInit {
 
   constructor() { }
   x = [faTwitter,faLinkedin];
-  total = 6;
+  total = 5;
   isMore = false;
   public teamlist = [
-    {'isTrue':true,'Name':'Vivek Raman', 'Designation':'Managing Director', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
-    {'isTrue':true,'Name':'Ashish', 'Designation':'Chief Advisory Officer - CAO', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
-    {'isTrue':true,'Name':'Pawan', 'Designation':'Global Community Head', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
-    {'isTrue':true,'Name':'Prince Pratap Singh', 'Designation':'Chief Operating Officer - COO', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
-    {'isTrue':true,'Name':'Dev', 'Designation':'Chief Marketing Officer - CMO', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
+    {'isTrue':true,'Name':'Ashish', 'Designation':'Co-Founder, Chief Advisor', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
+    {'isTrue':true,'Name':'Prince Pratap Singh', 'Designation':'Co-Founder, COO', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
+    {'isTrue':true,'Name':'Dev', 'Designation':'Co-Founder, CMO', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
+    {'isTrue':true,'Name':'Pawan', 'Designation':'Co-Founder, Global Community Head', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
     {'isTrue':true,'Name':'Louisa Lopez', 'Designation':'Head of Business Dev', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
-    {'isTrue':true,'Name':'Shaan Sundar', 'Designation':'Tech Lead', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
-    {'isTrue':true,'Name':'Shaan Sundar', 'Designation':'Tech Lead', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
-    {'isTrue':true,'Name':'Shaan Sundar', 'Designation':'Tech Lead', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
+    {'isTrue':true,'Name':'Vivek Raman', 'Designation':'Managing Director', 'Description':'Eu dolor in irure cillum officia proident excepteur dolore duis magna. Pariatur velit pariatur nulla voluptate dolore eu eiusmod. Enim non cillum quis eu. Magna sint minim laborum voluptate non ea.'},
   ];
 
   ngOnInit(): void {
